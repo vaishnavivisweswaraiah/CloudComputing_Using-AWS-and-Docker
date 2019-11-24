@@ -21,7 +21,7 @@ def cpu_utilization():
     ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
     #load key
-    key=paramiko.RSAKey.from_private_key_file("/Users/vaishnaviv/vaishnavi_ec2_key.pem")
+    key=paramiko.RSAKey.from_private_key_file("your_ec2_key.pem path")
 
 
     #fetch instance details and display cpu utilization
