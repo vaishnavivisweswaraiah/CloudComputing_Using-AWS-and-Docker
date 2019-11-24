@@ -17,7 +17,7 @@ def cpu_usuage_container():
     ssh_client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
     #load key
-    key=paramiko.RSAKey.from_private_key_file("/Users/vaishnaviv/vaishnavi_ec2_key.pem")
+    key=paramiko.RSAKey.from_private_key_file("path to_ec2_key.pem")
 
     #installing docker on instances running
     error=[]
